@@ -1,9 +1,10 @@
 package br.com.example.davidarchanjo.model.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+// CHANGE: javax.persistence → jakarta.persistence
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import lombok.Builder;
 import lombok.Data;
@@ -29,5 +30,4 @@ public class App {
     this.name = name;
     this.version = version;
   }
-
 }
